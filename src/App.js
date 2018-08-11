@@ -1,4 +1,4 @@
-// checked 25
+// checked 26
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './component/search_bar';
@@ -8,7 +8,9 @@ let api='AIzaSyBF5StKJDolrs0UJCqE2k5aJj-o5uncdCA';
 class App extends Component {
   constructor(props){
     super (props);
-    this.state={videos:[]};
+    this.state={
+      videos:[],
+    }
     YTSearch({key:api, term:'surfboard'},(videos)=>{
       this.setState=({ videos });
     });
@@ -25,3 +27,5 @@ class App extends Component {
   }
 }
 export default App;
+
+
