@@ -1,4 +1,4 @@
-// checked 26
+// checked 27
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './component/search_bar';
