@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 const VideoDetail=({video})=>{
-    const VideoId=video.id.VideoId;
-    const url=`https://www.youtube.com/embed/$(VideoId)`;
+   if (!video){
+      return <div> loading .... </div>
+   }
+   const VideoId = video.id.videoId;
+    const url='https://www.youtube.com/embed/'+VideoId;
   return(
       <div className="video-detail col-md-8">
         <div className="embed-responsive embed-responsive-16by9">
-         <iframe className="embed-responsive-item" src={url}></iframe>
+         <iframe className="embed-responsive-item" src={url} title="video"></iframe>
         </div>
         <div className="details"> </div>
         <div>{video.snippet.title} </div>
