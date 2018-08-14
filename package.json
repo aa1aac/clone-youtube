@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "react-youtube-clone",
   "version": "1.0.0",
   "description": "Simple Youtube clone with starter package for Redux with React and Babel support",
@@ -34,5 +35,24 @@
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9"
+=======
+  "name": "clone-youtube",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.0.0",
+    "loadash": "^1.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "youtube-api-search": "0.0.5",
+    "youtube-api-v3-search": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+>>>>>>> a9b963d3237ecead92bc76afaf075db0fc82bbba
   }
 }

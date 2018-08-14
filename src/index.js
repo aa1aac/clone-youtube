@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import _                    from "lodash";
 import React, { Component } from "react";
 import ReactDOM             from "react-dom";
@@ -41,3 +42,13 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.querySelector(".container"));
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+>>>>>>> a9b963d3237ecead92bc76afaf075db0fc82bbba
